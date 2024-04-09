@@ -1,0 +1,73 @@
+//Primary
+$orange : #EF8545;
+$purple : #932B68;
+$white : #fff;
+
+//Other
+$header : 120px;
+body{
+font-family : 'DM Sans',serif;
+font-size : 18px;
+}
+
+h1,h2 {
+font-family : 'Abril Fatface', serif;
+}
+
+
+.header{
+background: rgb(161,44,106);
+background: linear-gradient(180deg,rgba(116,41,99,1)  0%, rgba(161,44,106,1) 78%);
+height : $header;
+padding-top:15px;
+display:flex;
+justify-content: center;
+&__logo{
+    width : 10%;
+    &__image{
+        width : 60%;
+    }
+}
+&__navigation{
+    width : 55%;
+    ul{
+        display:flex;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+        
+    }
+    &__white{
+        text-decoration: none;
+        color: $white;
+        line-height: $header - 15px;
+    }
+    &__orange{
+        text-decoration: none;
+        color : $orange;
+        line-height: $header - 15px;
+    }
+}
+&__devis{
+    width : 9%; 
+    display:flex;
+    align-items: center;
+    &__button{
+        padding : 7px 20px;
+        border-radius : 15px;
+        
+        border : none;
+        background: rgb(240,141,65);
+        background: linear-gradient(180deg, rgba(240,141,65,1) 0%, rgba(230,54,114,1) 78%);
+        a{
+            color : $white;
+            text-decoration: none; 
+        }
+    }
+}
+&__social{
+    width : 9%;
+    display:flex;
+    justify-content: space-around;
+}
+}

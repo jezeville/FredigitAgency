@@ -1,0 +1,198 @@
+@import 'reset';
+@import 'header';
+@import 'footer';
+
+body{
+    background-color : #A12C6A;
+}
+
+.main{
+    &__title{
+        text-align: center;
+        font-size : 70px;
+        color : $orange;
+        margin-bottom: 25px;
+    }
+    &__paragraphe{
+        text-align: center;
+        font-size : 30px;
+        width : 80%;
+        color : $white;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+    &__map{
+        margin: auto;
+    }
+    &__coordonne{
+        margin: auto;
+        width: 45%;
+        margin-top : 25px;
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            &__contact{
+                &__phone{
+                    display: flex;
+                    margin-bottom : 15px;
+                }
+                &__localisation{
+                    display: flex;
+                }
+                &__lien{
+                    color : $white;
+                    text-decoration: none;
+                    font-size : 25px;
+                    margin-left : 15px;
+                }
+            }
+        }
+        &__right{
+            &__social{
+                display : flex;
+                float : right;
+                &__lien{
+                    margin-right : 15px;
+                }
+            }
+        }
+    }
+    &__button{
+        display : flex;
+        width : 60%;
+        margin : auto;
+        margin-top : 100px;
+        justify-content: space-around;
+        margin-bottom : 100px;
+        &__btn{
+            border : 2px solid $orange;
+            background-color : transparent;
+            color : white;
+            font-size : 30px;
+            box-shadow : 0px 7px 12px rgba(0, 0, 0, 0.3);
+        }
+    }
+    &__devis{
+        display : none;
+        &__title{
+            text-align: center;
+            font-size : 50px;
+            color : $orange;
+            margin-bottom: 25px;
+        }
+        &__paragraphe{
+            text-align: center;
+            font-size : 30px;
+            width : 80%;
+            color : $white;
+            margin: auto;
+            margin-bottom: 35px;
+        }  
+        &__form{
+            width : 40%;
+            margin : auto;
+            margin-top : 50px;
+            margin-bottom : 100px;
+            height : auto;
+            .input{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                width : 40%;
+            }
+            &__top{
+                display : flex;
+                justify-content: space-between;
+            }
+            &__center{
+                display : flex;
+                justify-content: space-between;
+            }
+            &__bottom{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                height : 300px;
+                width : 100%;
+            }
+            &__validate{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                float : right;
+            }
+        }
+    }
+    &__question{
+        display : none;
+        &__title{
+            text-align: center;
+            font-size : 50px;
+            color : $orange;
+            margin-bottom: 25px;
+        }
+        &__paragraphe{
+            text-align: center;
+            font-size : 30px;
+            width : 80%;
+            color : $white;
+            margin: auto;
+            margin-bottom: 35px;
+        }  
+        &__form{
+            width : 40%;
+            margin : auto;
+            margin-top : 50px;
+            margin-bottom : 100px;
+            height : auto;
+            .input{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                width : 40%;
+            }
+            &__top{
+                display : flex;
+                justify-content: space-between;
+            }
+            &__center{
+                display : flex;
+                justify-content: space-between;
+            }
+            &__bottom{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                height : 300px;
+                width : 100%;
+            }
+            &__validate{
+                background-color: $orange;
+                color : white;
+                padding : 15px;
+                border: none;
+                font-size : 25px;
+                margin-bottom : 15px;
+                float : right;
+            }
+        }
+    }
+    &__hr{
+        border : 1px solid white;
+    }
+}

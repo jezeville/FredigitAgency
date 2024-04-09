@@ -1,0 +1,200 @@
+
+@import 'reset';
+@import 'header';
+@import 'footer';
+
+.main{
+  &__top{
+    width : 40%;
+    height : 500px;
+    margin : 50px auto;
+    background-image: url('../src/image/campagne_web.jpg');
+    position :relative;
+    z-index : 0 ; 
+    text-align : center;
+    box-shadow : 0px 7px 12px rgba(0, 0, 0, 0.3);
+    &__filter{
+        background: rgb(241,146,63);
+        background: linear-gradient(180deg, rgba(241,146,63,0.9) 0%, rgba(230,50,116,0.7) 78%);
+        height : 100%;
+        width : 100%;
+        position: absolute;
+        z-index : 1;
+    }
+    &__title{
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+        padding-top: 120px;
+        font-size: 42px;
+    }
+    &__button{
+        position : relative ;
+        z-index : 2;
+        margin-top : 60px;
+        background-color: $purple;
+        border : none;
+        border-radius : 15px;
+        height : 50px;
+        &__lien{
+            text-decoration: none;
+            color : $white;
+            padding : 5px 15px;
+        }
+    }
+  }  
+
+
+  &__bubble{
+    width : 80%;
+    margin : auto;
+    margin-bottom : 70px;
+    &__title{
+        color : $orange;
+        width : 60%;
+        margin : auto;
+        text-align : center;
+        font-size : 35px;
+    }
+    &__underline{
+        background-color: $purple;
+        width: 120px;
+        height: 3px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    &__flex{
+        display : flex;
+        justify-content: space-around;
+        &__box{
+            margin-top : 50px;
+            width : 20%;
+            &__icon{
+                border-radius : 50%;
+                background-color: $purple;
+                height : 250px;
+            }
+            &__paragraphe{
+                margin-top : 15px;
+                color : $orange;
+                text-align: center;
+                font-size : 25px;
+            }
+        }
+    }
+  }
+
+  &__service{
+    margin-bottom : 70px;
+    &__title{
+        color : $orange;
+        width : 60%;
+        margin : auto;
+        text-align : center;
+        font-size : 35px;
+    }
+    &__underline{
+        background-color: $purple;
+        width: 120px;
+        height: 3px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom : 25px;
+    }
+    &__box{
+        display : flex;
+        width : 100%;
+        height : 600px;
+        .carte1{
+            background-image: url('../src/image/strategie_marketing.jpg');
+            
+        }
+        .carte2{
+            background-image: url('../src/image/reseaux_sociaux.jpg');
+        }
+        .carte3{
+            background-image: url('../src/image/campagne_marketing.jpg');
+        }
+        .carte4{
+            background-image: url('../src/image/edition_contenu.jpg');
+        }
+        &__carte{
+                width: 25%;
+                position : relative;
+                z-index : 0;
+                background-size: cover; 
+                background-position: center; 
+            &__filter{
+                position : absolute ;
+                z-index : 1;
+                width : 100%;
+                height : 600px;
+                background-color : rgba(147, 43, 104,0.7);
+            }
+            &__title{
+                position : relative;
+                z-index : 2;
+                color : white; 
+                font-size : 36px;
+                margin-left : 20px;
+                margin-top : 50%;
+                margin-right : 40px;
+            }
+            &__div{
+            text-align: center;
+                &__button {
+                    position: relative;
+                    z-index: 2;
+                    background: rgb(231,54,114);
+                    background: linear-gradient(0deg, rgba(231,54,114,1) 0%, rgba(240,144,64,1) 78%);
+                    height: 60px;
+                    border-radius: 25px;
+                    margin: 10% auto 0;
+                    border: none;
+                    width: 200px;
+                    text-align: center;
+                    &__lien {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  &__confiance{
+    &__title{
+        color : $orange;
+        margin : auto;
+        text-align : center;
+        font-size : 35px;
+    }
+    &__div{
+        text-align: center;
+            &__button {
+                position: relative;
+                z-index: 2;
+                background: rgb(231,54,114);
+                background: linear-gradient(0deg, rgba(231,54,114,1) 0%, rgba(240,144,64,1) 78%);
+                height: 80px;
+                border-radius: 25px;
+                margin: 25px auto;
+                border: none;
+                width: 300px;
+                text-align: center;
+                &__lien {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 25px;
+                }
+            }
+        }
+  }
+}

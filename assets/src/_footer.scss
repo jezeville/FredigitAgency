@@ -1,0 +1,71 @@
+.footer{
+    background: rgb(161,44,106);
+    background: linear-gradient(180deg, rgba(161,44,106,1) 0%, rgba(116,41,99,1) 78%);
+    padding-top:10px;
+    &__main{
+        display : flex;
+        justify-content: center;
+        &__left{
+            width : 20%;
+            &__image{
+                width : 30%;
+            }
+            &__contact{
+                &__lien{
+                    color : $white;
+                    text-decoration: none;
+                    margin-left: 5px;
+                }
+                .footer__phone{
+                    display: flex;
+                    margin : 3% 0%;
+                }
+                .footer__localisation{
+                    display: flex;
+                    margin : 3% 0%;
+                }
+            }
+            &__social{
+                display:flex;
+                &__lien{
+                    width : 10%;
+                }
+            }
+        }
+        &__center{
+            width : 25%;
+            padding-top : 2%;
+            height:200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            &__lien{
+                color : $white;
+                text-decoration: none;
+            }
+        }
+        &__right{
+            width : 25%;
+            padding-top : 2%;
+            padding-left : 2%;
+            &__titre{
+                color : $orange;
+            }
+            &__paragraph{
+                color : $white;
+            }
+        }
+    }
+    &__bottom{
+        &__hr{
+            margin-top : 20px;
+            border-color : rgba(245, 245, 220, 0.7)
+        }
+        &__copyright{
+            color : $white;
+            margin-top : 15px;
+            margin-left : 15px;
+        }
+    }
+}
